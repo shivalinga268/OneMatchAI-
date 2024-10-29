@@ -1,0 +1,162 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneMatchAI - AI-Powered Hiring Platform</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="OneMatchAI Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#demo">Demo</a>
+                <a href="#about">About</a>
+                <button class="btn-primary">Get Started</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AI-Powered Hiring Platform</h1>
+            <p>Transform your recruitment process with intelligent matching and automated workflows</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Get Started <i class="fas fa-arrow-right"></i></button>
+                <button class="btn-secondary">Watch Demo</button>
+            </div>
+        </div>
+        <div class="hero-animation" id="networkAnimation"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Powerful Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI Matching</h3>
+                <p>Intelligent candidate matching using advanced algorithms</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>Automated Workflow</h3>
+                <p>Streamline your hiring process with intelligent automation</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Team Collaboration</h3>
+                <p>Seamless collaboration tools for your hiring team</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Analytics</h3>
+                <p>Data-driven insights for better hiring decisions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <h2>See it in Action</h2>
+        <div class="demo-container">
+            <div class="demo-video">
+                <div class="placeholder-video">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <div class="demo-content">
+                <h3>How it Works</h3>
+                <ul class="demo-steps">
+                    <li><i class="fas fa-check-circle"></i> Upload job requirements</li>
+                    <li><i class="fas fa-check-circle"></i> AI matches candidates</li>
+                    <li><i class="fas fa-check-circle"></i> Review top matches</li>
+                    <li><i class="fas fa-check-circle"></i> Schedule interviews</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3 class="counter" data-target="98">0</h3>
+                <p>Match Accuracy</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="75">0</h3>
+                <p>Time Saved</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="200">0</h3>
+                <p>Enterprise Clients</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Bot -->
+    <div class="chatbot" id="chatbot">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>OneMatchAI Assistant</h3>
+                <button class="close-chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button class="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>OneMatchAI</h4>
+                <p>Transforming recruitment with AI</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <a href="#features">Features</a>
+                <a href="#demo">Demo</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@onematchai.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 OneMatchAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/animations.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
