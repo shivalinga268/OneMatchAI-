@@ -234,3 +234,120 @@ body {
         width: 300px;
     }
 }
+/* styles/animations.css */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Chat animations */
+.chat-container.active {
+    animation: slideIn 0.3s ease forwards;
+}
+
+.message {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.feature-card {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Message styles */
+.message {
+    margin: 1rem 0;
+    max-width: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.message.bot {
+    background: var(--primary-light);
+    color: white;
+    border-radius: 1rem 1rem 1rem 0;
+    align-self: flex-start;
+}
+
+.message.user {
+    background: var(--background-light);
+    color: var(--text-dark);
+    border-radius: 1rem 1rem 0 1rem;
+    align-self: flex-end;
+}
+
+/* Error styles */
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.success-message {
+    color: #059669;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Loading animations */
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f4f6;
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Hover effects */
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(109, 40, 217, 0.2);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .chat-container {
+        width: calc(100vw - 2rem);
+        right: 1rem;
+    }
+
+    .feature-card {
+        margin: 1rem;
+    }
+}
